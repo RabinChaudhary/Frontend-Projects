@@ -1,0 +1,95 @@
+*,
+::after,
+::before {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-family: "Poppins", sans-serif;
+}
+
+header.logo {
+  display: flex;
+  justify-content: end;
+  gap: 1em;
+}
+
+ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  width: 100%;
+  margin: 4em 0;
+  padding-left: 11.5em;
+}
+li{
+    position:relative;
+}
+
+a.navlink {
+
+  text-decoration: none;
+  font-size: small;
+  font-weight: bold;
+  transform: all 2s ease-in-out;
+  position:absolute;
+}
+
+a.navlink:hover {
+    
+  color: #252a37;
+ 
+  -webkit-transform: scale(1.2);
+  -moz-transform: scale(1.2);
+  -o-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  transform: scale(1.2);
+  transform: all 2s ease-in-out;
+}
+a.navlink:active{
+    -webkit-transform: translateX(20px);
+    -moz-transform: translateX(20px);
+    -o-transform: translateX(20px);
+    -ms-transform: translateX(20px);
+    transform: translateX(20px);
+    
+}
+.main-body {
+  display: grid;
+  grid-template-columns: minmax(500px, auto) 1fr;
+  grid-template-areas: "navbar mainContent";
+}
+
+nav#navbar {
+  grid-area: navbar;
+  position: fixed;
+  background: #f6f6fb;
+  padding: 2em 4em;
+  width: 500px;
+  height: 100vh;
+}
+
+main#main-doc {
+  grid-area: mainContent;
+  padding: 5em 5em;
+}
+
+section {
+  margin-bottom: 5em;
+}
+
+code {
+  background: #252a37;
+  color: #a671c0;
+  display: block;
+  padding: 20px;
+}
+
+header {
+  font-weight: 800;
+  margin-bottom: 2em;
+}
